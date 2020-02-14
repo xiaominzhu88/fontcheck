@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <title>Text Check</title>
+  </head>
+
+  <body>
+    <div class="outer-container">
+      <header>
+        <h1>Text</h1>
+        <h2>Test your Text</h2>
+      </header>
+
+      <div class="form-holder">
+        <div class="type-choose">
+          <form method="POST">
+            <p>Font Family</p>
+            <select class="family" name="font" id="font">
+              <option value="helvetica" id="helvetica" selected
+                >Helvetica</option
+              >
+              <option value="times" id="times">Times</option>
+              <option value="curier" id="curier">Curier</option>
+              <option value="cursive" id="cursive">Cursive</option>
+              <option value="fantasy" id="fantasy">Fantasy</option>
+              <option value="monospace" id="monospace">Monospace</option>
+            </select>
+
+            <p>Font Weight</p>
+            <select class="weight" id="weight">
+              <option value="normal" selected>Normal</option>
+              <option value="bold">Bold</option>
+              <option value="bolder">Bolder</option>
+              <option value="lighter">Lighter</option>
+            </select>
+
+            <p class="size">Font Size</p>
+            <input type="text" placeholder="22" id="size" />
+          </form>
+        </div>
+      </div>
+      <br />
+
+      <textarea
+        placeholder="Type something"
+        name="text"
+        id="text"
+        cols="40"
+        rows="10"
+      >
+      </textarea>
+
+      <div class="preview">Sample</div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
